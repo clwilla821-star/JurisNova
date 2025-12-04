@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>JurisNova Solutions | Litigation & AI Paralegal Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="JurisNova Solutions provides drafting, discovery, trial preparation, and AI-enhanced paralegal support for solo and small PI law firms in Florida." />
+  <style>
+    :root {
+      --navy: #0b1b3b;
+      --navy-light: #1f3f72;
+      --gold: #d4af37;
+      --bg: #f5f6fa;
+      --text: #222;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: linear-gradient(135deg, var(--navy), var(--navy-light));
+      color: #fff;
+      padding: 28px 16px 40px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 4px 0;
+      opacity: 0.92;
+    }
+    header .tagline {
+      font-style: italic;
+      margin-top: 8px;
+      opacity: 0.9;
+    }
+    .contact-strip {
+      margin-top: 10px;
+      font-size: 0.95rem;
+    }
+    .contact-strip a {
+      color: #fffbcc;
+      text-decoration: none;
+    }
+    .btn-primary {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 20px;
+      border-radius: 999px;
+      background: #fff;
+      color: var(--navy);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .btn-primary:hover {
+      background: #fffbcc;
+    }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+    section {
+      background: #fff;
+      border-radius: 10px;
+      padding: 18px 18px 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    section h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #555;
+    }
+    .highlight {
+      color: var(--navy-light);
+      font-weight: 600;
+    }
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .pill {
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #eef1f7;
+      font-size: 0.8rem;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin-top: 10px;
+    }
+    .card {
+      padding: 10px 10px 12px;
+      border-radius: 8px;
+      border: 1px solid #e0e2ee;
+      background: #fafbff;
+      font-size: 0.9rem;
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 0.98rem;
+      color: var(--navy-light);
+    }
+    ul {
+      padding-left: 18px;
+      margin: 6px 0 0;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    .price-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+      font-size: 0.9rem;
+    }
+    .price-tag {
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: #f3f4ff;
+      border: 1px solid #e2e5ff;
+    }
+    .cta-box {
+      border-left: 4px solid var(--gold);
+      padding-left: 10px;
+      margin-top: 10px;
+      font-size: 0.95rem;
+    }
+    .contact-form {
+      background: #e6f0ff;
+      padding: 16px;
+      border-radius: 8px;
+      margin-top: 14px;
+    }
+    .form-group {
+      margin-bottom: 12px;
+      display: flex;
+      flex-direction: column;
+    }
+    .form-group label {
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: var(--navy);
+      font-size: 0.9rem;
+    }
+    .form-group input,
+    .form-group textarea {
+      padding: 8px 10px;
+      border: 1px solid #b3d9ff;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 0.9rem;
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    .btn-submit {
+      background: var(--navy-light);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+    .btn-submit:hover {
+      background: var(--navy);
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 0 0 22px;
+    }
+    @media (min-width: 700px) {
+      header h1 {
+        font-size: 2.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>JurisNova Solutions</h1>
+    <p class="tagline">
+      Litigation & AI-Enhanced Paralegal Support for Solo and Small PI Firms
+    </p>
+    <p>Drafting • Discovery • Trial Prep • AI Workflows</p>
+    <div class="contact-strip">
+      Jacksonville, FL • <a href="tel:9044138115">(904)413-8115</a> •
+      <a href="mailto:jurisnovasolutions@gmail.com">jurisnovasolutions@gmail.com</a>
+    </div>
+    <a class="btn-primary" href="mailto:jurisnovasolutions@gmail.com?subject=JurisNova%20Support%20Inquiry">
+      Request Support or Service Menu
+    </a>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About JurisNova</h2>
+      <p>
+        JurisNova Solutions provides on-demand litigation support to
+        <span class="highlight">plaintiff personal injury</span> and
+        <span class="highlight">defense</span> attorneys across Florida.
+        Led by our professional Paralegals, we help solo
+        and small firms manage high-volume caseloads with reliable drafting,
+        discovery, and trial preparation—plus modern, AI-assisted workflows
+        that save time without sacrificing quality.
+      </p>
+      <p>
+        <strong>OUR FOCUS:</strong> Empower your firm with reliable, high-quality support that lets you focus on what matters most—winning cases and growing your practice without the burden of administrative overwhelm.
+      </p>
+      <div class="pill-row">
+        <span class="pill">Motions &amp; Pleadings</span>
+        <span class="pill">Discovery Drafting</span>
+        <span class="pill">Trial Binder Prep</span>
+        <span class="pill">Deposition &amp; Medical Summaries</span>
+        <span class="pill">AI Drafting Support</span>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>Drafting &amp; Discovery</h3>
+          <ul>
+            <li>Motions to Compel, Motions in Limine, Extensions</li>
+            <li>Complaints (PI, auto, premises)</li>
+            <li>Interrogatories &amp; Requests for Production</li>
+            <li>Discovery responses &amp; deficiency charts</li>
+            <li>Legal research summaries (case / statute focused)</li>
+          </ul>
+          <div class="price-row">
+            <div class="price-tag">Motions from $75</div>
+            <div class="price-tag">Complaints from $125</div>
+            <div class="price-tag">Discovery from $85</div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Trial &amp; Case Support</h3>
+          <ul>
+            <li>Trial binder creation and structure</li>
+            <li>Exhibit and witness lists</li>
+            <li>Deposition &amp; medical treatment summaries</li>
+            <li>Pretrial and mediation prep checklists</li>
+            <li>File organization and deadline calendars</li>
+          </ul>
+          <div class="price-row">
+            <div class="price-tag">Trial Binder from $250</div>
+            <div class="price-tag">Depo Summary from $95</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="two-col" style="margin-top: 12px;">
+        <div class="card">
+          <h3>AI-Enhanced Workflows</h3>
+          <ul>
+            <li>AI-assisted drafting &amp; cleanup for motions and letters</li>
+            <li>AI-powered summaries (records, depos, discovery)</li>
+            <li>Template and checklist creation for repeat tasks</li>
+            <li>Billing &amp; time-entry efficiency frameworks</li>
+          </ul>
+          <div class="price-row">
+            <div class="price-tag">AI Cleanup from $50</div>
+            <div class="price-tag">Workflow Setup from $250</div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Premium Packages</h3>
+          <ul>
+            <li><strong>Litigation Accelerator</strong> – drafting + discovery set-up for new files</li>
+            <li><strong>Trial Readiness</strong> – binder, exhibits, witnesses, checklists</li>
+            <li><strong>AI Law Office Upgrade</strong> – prompts &amp; workflows for your team</li>
+          </ul>
+          <p style="font-size:0.85rem;margin-top:6px;">
+            Packages can be tailored to your firm's caseload, staffing, and budget.
+          </p>
+        </div>
+      </div>
+
+      <div class="cta-box">
+        <strong>Next step:</strong> Email
+        <a href="mailto:jurisnovasolutions@gmail.com">jurisnovasolutions@gmail.com</a>
+        with a brief description of your case needs or attach a redacted sample order,
+        and we'll reply with a clear turnaround time and flat-fee quote.
+      </div>
+    </section>
+
+    <section id="who-we-serve">
+      <h2>Who We Serve</h2>
+      <p>
+        JurisNova Solutions is ideal for:
+      </p>
+      <ul>
+        <li>Solo PI attorneys building or scaling their practice</li>
+        <li>Small personal injury and civil litigation firms</li>
+        <li>Attorneys balancing PI with family, criminal, or other practice areas</li>
+        <li>Firms curious about AI, but needing practical, ethical workflows</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Ready to offload drafting, discovery, or trial prep?
+      </p>
+      <p>
+        Email <a href="mailto:jurisnovasolutions@gmail.com">jurisnovasolutions@gmail.com</a> or call
+        <a href="tel:9044138115">(904)413-8115</a> to discuss your needs.
+      </p>
+      <div class="contact-form">
+        <h3 style="margin-top: 0; color: var(--navy);">Quick Inquiry</h3>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="message">Tell us about your needs</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Inquiry</button>
+        </form>
+      </div>
+      <p style="font-size:0.9rem; margin-top: 14px;">
+        Please do not send confidential or privileged information until a formal engagement is confirmed.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> JurisNova Solutions. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
